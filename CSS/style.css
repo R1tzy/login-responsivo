@@ -157,21 +157,6 @@ ion-icon{
     color: var(--gray);
 }
 
-.background > div{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: grid;
-    place-items: center;
-}
-
-.background{
-    height: 100vh;
-    background: var(--white-200);
-    width: max(450px, 50vw);
-}
-
 .imagem{
     position: relative;
     display: none;
@@ -189,6 +174,21 @@ ion-icon{
 @media (min-width:800px){
     .imagem{
         display: block;
+    }
+
+    .background > div{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        place-items: center;
+    }
+    
+    .background{
+        height: 100vh;
+        background: var(--white-200);
+        width: max(450px, 50vw);
     }
 }
 
